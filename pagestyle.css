@@ -82,8 +82,8 @@ a {
 
 .vizualizare {
     width: 90%;
-    border-left: 4px solid #4f3733;
-    border-right: 4px solid #4f3733;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ a {
 .slider-wrapper {
     position: relative;
     max-width: 50rem;
-    margin: 0 auto;
+    margin: 0 left;
 }
 
 .slider {
