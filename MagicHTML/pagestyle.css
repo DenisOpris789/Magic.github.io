@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+head {
+   font-family: "Macondo";
+    }
+
+body {
+     font-family: "Macondo";
+     margin: 0 auto;
+     width: 100vw;
+     background-color: #533e3b;
+  }
+
+table {width: 100%;
+    height:auto; 
+}
+
+a{
+    text-decoration: None;
+    color: black;
+
+}
+
+
+.img1 {   
+    opacity: 1;
+    border-radius: 50%;
+    width: 7%;
+    padding-bottom: 0.9%;
+}
+
+.container img {
+
+        height: 100%;
+        width: 100%;
+      
+      
+}
+
+.buton{
+    cursor: pointer;
+    width: 25%;
+    font-size: 1em;
+
+}
+
+.buton:hover{
+    background-color: #4f3733;
+}
+
+.banner {
+        text-align: center;
+        padding-top: 0.7%;
+        width: 100%;
+        background-color: #533e3b;
+    }
+
+.meniu {
+    font-size: 20px;
+    margin-left: -8%;
+}
+
+.vizualizare{
+    width:90%; 
+    border-left:4px solid #4f3733;
+    border-right:4px solid #4f3733; 
+    margin:0 auto
+}
