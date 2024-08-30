@@ -54,12 +54,12 @@ a {
     cursor: pointer;
     width: 16.6%;
     font-size: 1em;
-    background-color: #533e3b;
+    background-color: #055f37;
     text-align: center;
 }
 
 .buton1:hover {
-    background-color: #4f3733;
+    background-color: #055f37;
 }
 
 .DespreNoi {
