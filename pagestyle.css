@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     margin: 0 auto;
     width: 100%;
     background-color: #4f3733;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 table {
@@ -35,9 +37,9 @@ a {
 
 .buton {
     cursor: pointer;
-    width: 25%;
-    font-size: 1em;
+    flex: 1; /* Allows equal spacing between buttons */
     text-align: center;
+    font-size: 1em;
 }
 
 .buton:hover {
@@ -57,11 +59,20 @@ a {
 }
 
 .banner {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0.7%;
     width: 100%;
     background-color: #533e3b;
     margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Distributes buttons evenly */
+    width: 100%;
+    max-width: 1200px;
 }
 
 .meniu {
@@ -82,7 +93,7 @@ a {
 
 .slider-wrapper {
     position: relative;
-    max-width: 48rem;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
@@ -105,6 +116,7 @@ a {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    opacity: 0.6;
 }
 
 .slider-nav {
@@ -133,13 +145,15 @@ a {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .banner img.img1 {
-        width: 15%; /* Increase logo size on smaller screens */
+        width: 25%; /* Reduce logo size for smaller screens */
+    }
+
+    .banner {
+        padding-top: 0.5rem; /* Reduce top padding */
     }
 
     .buton, .buton1 {
-        width: 100%; /* Stack the navigation buttons */
-        margin-bottom: 10px;
-        font-size: 1.2em; /* Slightly increase text size for better readability */
+        font-size: 1em; /* Keep text size readable */
     }
 
     .vizualizare, .meniu {
@@ -152,5 +166,27 @@ a {
 
     .container {
         padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce the font size for headings */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner img.img1 {
+        width: 20%; /* Further reduce logo size for very small screens */
+    }
+
+    .buton, .buton1 {
+        font-size: 0.9em; /* Slightly reduce button text size */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Further reduce the font size for headings */
+    }
+
+    .banner {
+        padding-top: 0.3rem; /* Further reduce top padding */
     }
 }
