@@ -127,6 +127,7 @@ a {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    width: 100%;
 }
 
 .slider-nav {
@@ -154,6 +155,10 @@ a {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .slider img {
+        width: 100%; /* Pe mobil, ocupă întreaga lățime a containerului */
+        height: auto; /* Înălțimea se ajustează automat pentru a menține proporțiile */
+    }
     .banner img.img1 {
         width: 25%; /* Reduce logo size for smaller screens */
     }
@@ -180,6 +185,26 @@ a {
 
     h1 {
         font-size: 1.5rem; /* Reduce the font size for headings */
+    }
+
+    /* Make the text appear below the image slider on mobile devices */
+    .slider-wrapper {
+        display: block; /* Ensure it's displayed as a block element */
+    }
+
+    td {
+        display: block; /* Make each cell take up the full width */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider-wrapper + td {
+        margin-top: 1rem; /* Add some space between the slider and text */
+        margin: 0 auto;
+    }
+
+    .slider-wrapper {
+        text-align: center; /* Center align text on mobile */
     }
 }
 
