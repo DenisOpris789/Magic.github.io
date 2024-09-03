@@ -50,13 +50,23 @@ a {
     color:#c7c3c0;
 }
 
+.tabelButon {
+    width: 16.6%;
+    text-align: center;
+}
+
 .buton1 {
     cursor: pointer;
-    width: 16.6%;
+    width: 100%;
     font-size: 1em;
     background-color: #055f37;
     text-align: center;
+    border: solid black;
+    border-radius: 15%;
+    font-family: "Macondo";
+    color: #c7c3c0;
 }
+
 
 .buton1:hover {
     background-color: #055f37;
