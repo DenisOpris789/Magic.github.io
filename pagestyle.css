@@ -58,11 +58,12 @@ a {
 .buton1 {
     cursor: pointer;
     width: 100%;
+    height: 4rem;
     font-size: 1em;
     background-color: #055f37;
     text-align: center;
     border: solid black;
-    border-radius: 15%;
+    border-radius: 1rem;
     font-family: "Macondo";
     color: #c7c3c0;
 }
@@ -87,6 +88,8 @@ a {
     width: 100%;
     background-color: black;
     margin: 0 auto;
+    border-bottom-left-radius: 1em ;
+    border-bottom-right-radius: 1em ;
 }
 
 .navbar {
@@ -163,6 +166,50 @@ a {
     opacity: 1;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.7%;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    border-top-left-radius : 1em;
+    border-top-right-radius : 1em;
+    color: #c7c3c0;
+}
+
+#MergiMeniu.container img {
+    border: 0.2rem solid #c7c3c0;
+}
+
+#Rezerva.container {
+    background-image: url('Logo.png') ;
+    opacity: 0.65;
+    background-size: 20%;
+}
+
+label {
+    color: #c7c3c0;
+    opacity: 1;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width:80rem;
+}
+
+label {
+    padding: 1rem;
+}
+
+input{
+    padding: 0.5rem;
+    
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .slider img {
@@ -216,22 +263,45 @@ a {
     .slider-wrapper {
         text-align: center; /* Center align text on mobile */
     }
+    .meniu {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .banner img.img1 {
-        width: 20%; /* Further reduce logo size for very small screens */
+        width: 19%; /* Further reduce logo size for very small screens */
     }
 
     .buton, .buton1 {
-        font-size: 0.9em; /* Slightly reduce button text size */
+        font-size: 0.7em; /* Slightly reduce button text size */
     }
 
     h1 {
-        font-size: 1.2rem; /* Further reduce the font size for headings */
+        font-size: 0.8rem; /* Further reduce the font size for headings */
     }
+
+
 
     .banner {
         padding-top: 0.3rem; /* Further reduce top padding */
     }
+
+
+    .footer{
+        margin:0 auto;
+        padding-top:0.3rem;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    form {
+        text-align: center;
+        margin: 0 auto;
+        width:10rem;
+    }
+    #rezerva.container {
+        background-size: contain;
+    }
 }
+
+

@@ -12,7 +12,7 @@
 <body>
     <!--Partea de inceput care contine logo-ul si bara de navigatie de sus-->
     <div class="banner">
-        <img class="img1" src="NewLogo.jpg">
+        <img class="img1" src="Logo.png" style="border: 0.15em dashed #055f37">
         <div class="navbar">
             <div class="buton">
                 <h1 ><a href="#MergiAbout">Despre noi</a></h1>
@@ -30,7 +30,7 @@
     </div>
     <div class="vizualizare">
     <div class="container" style="margin:0">
-        <img src="bar.jpg", alt="Poza bar">
+        <img src="alb-negru.jpg", alt="Poza bar">
     </div>
     <!--Partea care contine sectiunea despre noi-->
     <section class="container">
@@ -38,26 +38,28 @@
             <tr>
                 <td style = "width: 50%;">
                     <div class="slider-wrapper">
-                    <div class="slider">
-                        <img src="poza1.jpg" alt="Imagine bar" id="slide1">
-                        <img src="poza2.jpg" alt="Imagine bar" id="slide2">
-                        <img src="poza3.jpg" alt="Imagine bar" id="slide3">
-                        <img src="poza4.jpg" alt="Imagine bar" id="slide4">
+                    <div class="slider" id="MergiAbout">
+                        <img src="poza1.jpg" alt="Imagini din local" id="slide1">
+                        <img src="poza2.jpg" alt="Imagini din local" id="slide2">
+                        <img src="poza3.jpg" alt="Imagini din local" id="slide3">
+                        <img src="poza4.jpg" alt="Imagini din local" id="slide4">
+                        <img src="poza5.jpg" alt="Imagini din local" id="slide5">
                     </div>
                     <div class ="slider-nav">   
                         <a href="#slide1"></a>   
                         <a href="#slide2"></a>  
                         <a href="#slide3"></a>  
+                        <a href="#slide4"></a>
                         <a href="#slide5"></a>  
                     </div>
                 </div>
                 </td>
             <td>
-                <div>
+                <div >
                     <h1 class="DespreNoi">
                         "Descoperă magia în fiecare colț al Magic Caffe!"
                     </h1>
-                    <h3 class="DespreNoi" id="MergiAbout">
+                    <h3 class="DespreNoi" >
                         Atmosferă plăcută, muzică relaxantă, băuturi răcoritoare și gustări delicioase – toate te așteaptă la Magic Caffe.
                          Relaxează-te cu o shisha aromată sau provoacă-ți prietenii la un meci de PlayStation. La noi, fiecare vizită este o experiență unică.
                           
@@ -70,42 +72,110 @@
 
     
     <!--Meniul-->
-        <div class="meniu" id="MergiMeniu">
+        <div class="meniu">
             <table>
                 <tr>
                     <th >
-                       <button class = "buton1" onclick="changeMenu('Menu2.jpg')">Meniu Shisha & Game</button>
+                       <button class = "buton1" onclick="changeMenu('MeniuCafea1.jpg')">Meniu Shisha & Game</button>
                     </th>
                     <th>
                         
                         <button class = "buton1" onclick="changeMenu('Menu3.png')">Meniu Mâncare</button>
                     </th>
                     <th>
-                        <button class = "buton1" onclick="changeMenu('Menu2.jpg')" >Meniu Băutură</button>
+                        <button class = "buton1" onclick="changeMenu('MeniuRacoritoare1.jpg')" >Meniu Băutură</button>
                         
                     </th>
                     <th>
-                        <button class = "buton1" onclick="changeMenu('Menu3.png')" >Meniu limnonadă</button>
+                        <button class = "buton1" onclick="changeMenu('MeniuLimonada1.jpg')" >Meniu limnonadă</button>
                         
                     </th>
                     <th>
-                        <button class = "buton1" onclick="changeMenu('Menu2.jpg')" >Meniu snack-uri</button>             
+                        <button class = "buton1" onclick="changeMenu('MeniuSnacks1.jpg')" >Meniu snack-uri</button>             
                     </th>
                     <th> 
-                        <button class = "buton1" onclick="changeMenu('Menu3.png')" >Meniu Cafea</button>
+                        <button class = "buton1" onclick="changeMenu('MeniuCafea1.jpg')" >Meniu Cafea</button>
                     </th>
                 </tr>
-                <tr >
-                    <td colspan = "6">
-                        <div class="container" style="margin:0">
-                            <img src="bar.jpg", alt="Poza bar" id="Menuimg" style="margin: 0 auto;">
-                        </div>
-                    </td>
-
-                </tr>
             </table>
+                        <div class="container" id="MergiMeniu">
+                            <img src="bar.jpg", alt="Poza bar" id="Menuimg" >
+                        </div>
+
+            
+        </div>
+    <!--Rezervare-->
+        <div class="container" id="Rezerva">
+                <form >
+                    <table >
+                        <tr>
+                            <td>  
+                                <label for="fname">Prenume:</label>
+                                <br>
+                                <input type="text" id="fname" name="fname" required>
+                            </td>
+                            <td>
+                                <label for="name">Nume:</label>
+                                <br>
+                                <input type="text" id="name" name="name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                        
+                                <label for="Pnumber">Număr de telefon:</label>
+                                <br>
+                                <input type="tel" id="Pnumber" name="Pnumber" minlength="10" maxlength="10" required>
+                            </td>
+                            <td>
+                                <label for="email">Email:</label>
+                                <br>
+                                <input type="email" id="email" name="email">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <label for="data">Data rezervării: </label>
+                    <br>
+                    <input type="date" id="data" name="data" required>
+                    <br>
+                    <label for="ora">Ora rezervării: </label>
+                    <br>
+                    <input type="time" id="ora" name="ora">
+                    <br>
+                    <label for="info">Informații adiționale:</label>
+                    <br>
+                    <textarea id="info" name="info"> </textarea>
+                </form>
         </div>
     </div>
+    <!--Contact-->
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <h3>Adresă de Mail:</h3>
+                    <p>daniomagic.srl@gmail.com</p>
+                </td>
+                <td>
+                    <h3> Număr de telefon:</h3>
+                    <p>0748 401 760</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Locație:</h3>
+                    <p>Bulevardul București, numărul 26A </p>
+                </td>
+                <td>
+                    <h3>Instagram:</h3>
+                    <p id="MergiContact"><a href="https://www.instagram.com/magic_pub_caffe/">Magic_pub_caffe</a></p> 
+                </td>
+            </tr>
+        </table>
+
+    </div>
+        
+    
 
 </body>
 </html>
