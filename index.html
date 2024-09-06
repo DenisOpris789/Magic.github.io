@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="pagestyle.css">
         <script src="Scripts.js"></script>
-        
+        <script src="assets/js/jquery.min.js"></script>
         
         <title>Magic Pub Caffe</title>
     </head>
@@ -106,46 +106,52 @@
         </div>
     <!--Rezervare-->
         <div class="container" id="Rezerva">
-                <form >
+                <form name="gform" id="gform" enctype="text/plain" 
+                action="https://docs.google.com/forms/d/e/1FAIpQLSefZ4xXmhBYxcEg07kKLIbhuFtLNcA2nbAv2BoKrJLJw4aa5Q/formResponse?"
+                target="hidden_iframe" onsubmit="submitted=true;">
                     <table >
                         <tr>
                             <td>  
-                                <label for="fname">Prenume:</label>
+                                <label for="entry.1167662781">Nume:</label>
                                 <br>
-                                <input type="text" id="fname" name="fname" required>
+                                <input type="text" id="entry.1167662781" name="entry.1167662781" required>
                             </td>
                             <td>
-                                <label for="name">Nume:</label>
+                                <label for="entry.470352571">Preume:</label>
                                 <br>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="entry.470352571" name="entry.470352571" required>
                             </td>
                         </tr>
                         <tr>
                             <td>                        
-                                <label for="Pnumber">Număr de telefon:</label>
+                                <label for="entry.921363640">Număr de telefon:</label>
                                 <br>
-                                <input type="tel" id="Pnumber" name="Pnumber" minlength="10" maxlength="10" required>
+                                <input type="tel" id="entry.921363640" name="entry.921363640" minlength="10" maxlength="10" required>
                             </td>
                             <td>
-                                <label for="email">Email:</label>
+                                <label for="entry.43537300">Email:</label>
                                 <br>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="entry.43537300" name="entry.43537300">
                             </td>
                         </tr>
                     </table>
                     <br>
-                    <label for="data">Data rezervării: </label>
+                    <label for="entry.1414293208">Data rezervării: </label>
                     <br>
-                    <input type="date" id="data" name="data" required>
+                    <input type="date" id="entry.1414293208" name="entry.1414293208" required>
                     <br>
-                    <label for="ora">Ora rezervării: </label>
+                    <label for="entry.1553501996">Ora rezervării: </label>
                     <br>
-                    <input type="time" id="ora" name="ora">
+                    <input type="time" id="entry.1553501996" name="entry.1553501996">
                     <br>
-                    <label for="info">Informații adiționale:</label>
+                    <label for="entry.266556346">Informații adiționale:</label>
                     <br>
-                    <textarea id="info" name="info"> </textarea>
+                    <textarea id="entry.266556346" name="entry.266556346"> </textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Trimite cerere">
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
     </div>
     <!--Contact-->
