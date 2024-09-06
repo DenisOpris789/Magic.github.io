@@ -92,11 +92,13 @@ a {
     border-bottom-right-radius: 1em ;
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-around; /* Distributes buttons evenly */
     width: 100%;
     max-width: 1200px;
+    padding-top: 0.5rem;
 }
 
 .meniu {
@@ -184,30 +186,19 @@ a {
 }
 
 #Rezerva.container {
-    background-image: url('Logo.png') ;
-    opacity: 0.65;
+    background-image: url('LogoOp.png') ;
+    opacity: 1;
     background-size: 20%;
 }
 
 label {
-    color: #c7c3c0;
-    opacity: 1;
+    color: white;
 }
 
 form {
     text-align: center;
     margin: 0 auto;
-    padding: 1rem;
-    width:100;
-}
-
-label {
-    padding: 1rem;
-}
-
-input{
-    padding: 0.5rem;
-
+    width:100%;
 }
 
 /* Responsive Styles */
@@ -290,17 +281,24 @@ input{
 
     .footer{
         margin:0 auto;
-        padding-top:0.3rem;
         font-size: 0.6rem;
         text-align: center;
     }
     form {
         text-align: center;
         margin: 0 auto;
-        width:10rem;
+        width:12rem;
     }
     #rezerva.container {
         background-size: contain;
+    }
+    label {
+        margin: 0 auto;
+    }
+    
+    input{
+        margin: 0 auto;
+    
     }
 }
 

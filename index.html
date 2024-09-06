@@ -109,7 +109,7 @@
                 <form name="gform" id="gform" enctype="text/plain" 
                 action="https://docs.google.com/forms/d/e/1FAIpQLSefZ4xXmhBYxcEg07kKLIbhuFtLNcA2nbAv2BoKrJLJw4aa5Q/formResponse?"
                 target="hidden_iframe" onsubmit="submitted=true;">
-                    <table >
+                    <table style="margin: 0 auto">
                         <tr>
                             <td>  
                                 <label for="entry.1167662781">Nume:</label>
@@ -140,16 +140,20 @@
                     <br>
                     <input type="date" id="entry.1414293208" name="entry.1414293208" required>
                     <br>
+                    <br>
                     <label for="entry.1553501996">Ora rezervării: </label>
                     <br>
                     <input type="time" id="entry.1553501996" name="entry.1553501996">
                     <br>
-                    <label for="entry.266556346">Informații adiționale:</label>
                     <br>
-                    <textarea id="entry.266556346" name="entry.266556346"> </textarea>
+                    <label for="entry.266556346" >Numărul persoanelor</label>
+                    <br>
+                    <label for="entry.266556346" > și alte informații</label>
+                    <br>
+                    <textarea id="entry.266556346" name="entry.266556346">Ex: 2 persoane, masa retrasa</textarea>
                     <br>
                     <br>
-                    <input type="submit" value="Trimite cerere">
+                    <input type="submit" value="Trimite cerere" id="Trimis" onclick="location.Reload()">
                 </form>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         </div>
@@ -170,7 +174,7 @@
             <tr>
                 <td>
                     <h3>Locație:</h3>
-                    <p>Bulevardul București, numărul 26A </p>
+                    <p>Bulevardul Regele Mihai I, numărul 26A </p>
                 </td>
                 <td>
                     <h3>Instagram:</h3>
