@@ -4,11 +4,18 @@ function changeMenu(filename) {
 }
 
 
-var submitted=false;
+var submitted = false;
 
 $('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(2000);
+    e.preventDefault(); // Previne trimiterea și reîncărcarea implicită a paginii.
+    $('#gform *').fadeOut(2000); // Animația de fade out
     $('#gform').prepend('Your submission has been processed...');
-    location.reload();
-    });
-    
+
+    // Așteaptă câteva secunde înainte de a reîncărca pagina
+    setTimeout(function() {
+        submitted = true;
+        $('#gform').submit(); // Trimiterea efectivă a formularului
+        location.reload(); // Reîncarcă pagina după trimitere
+    }, 2000);
+});
+
