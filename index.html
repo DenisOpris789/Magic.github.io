@@ -7,8 +7,13 @@
         <link rel="stylesheet" href="pagestyle.css"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="Scripts.js"></script>
-        
-        
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        });
+        </script>
+                
         <title>Magic Pub Caffe</title>
     </head>
 <body>
@@ -159,9 +164,9 @@
                     <textarea id="entry.266556346" name="entry.266556346" placeholder="Ex: 2 persoane, masa retrasa"></textarea>
                     <br>
                     <br>
-                    <input type="submit" value="Trimite cerere" id="Trimis" >
+                    <input type="submit" value="Trimite cerere" id="Trimis"  >
                 </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}" ></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location.reload();}" ></iframe>
         </div>
     </div>
     <!--Contact-->
