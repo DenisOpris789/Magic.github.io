@@ -3,4 +3,8 @@ function changeMenu(filename) {
     img.setAttribute('src', filename);
 }
 
-
+function Reload()
+{
+    alert("Cerere trimisă cu succes!!");
+    window.location.reload();
+}

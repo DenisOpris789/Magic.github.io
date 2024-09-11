@@ -9,10 +9,7 @@
         <script src="Scripts.js"></script>
         <script type="text/javascript">var submitted=false;</script>
         <script type="text/javascript">
-        $('#gform').on('submit', function(e) {
-        alert("Cerere trimisă cu succes!!")
-        $('#gform *').fadeOut(2000);
-        });
+        $('#gform').on('submit', function(e) {});
         </script>
                 
         <title>Magic Pub Caffe</title>
@@ -167,7 +164,7 @@
                     <br>
                     <input type="submit" value="Trimite cerere" id="Trimis"  >
                 </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location.reload();}" ></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {Reload()}" ></iframe>
         </div>
     </div>
     <!--Contact-->
